@@ -37,7 +37,7 @@ export default async function AdminBookingsPage({
             href={
               filter ? `/admin/bookings?status=${filter}` : "/admin/bookings"
             }
-            className={`rounded-xl px-4 py-3 font-bold ${status === filter || (!status && !filter) ? "bg-[#1F8F73] text-[#FAFAF8]" : "bg-[#2E2E2E]/10 text-[#2E2E2E]"}`}
+            className={`rounded-xl px-4 py-3 font-bold ${status === filter || (!status && !filter) ? "bg-[#8B5CE7] text-[#FAF7FF]" : "bg-[#29213D]/10 text-[#29213D]"}`}
           >
             {filter ? labels[filter] : "ทั้งหมด"}
           </Link>
@@ -53,14 +53,14 @@ export default async function AdminBookingsPage({
             <Card key={booking.id}>
               <div className="flex flex-col justify-between gap-3 sm:flex-row">
                 <div>
-                  <p className="font-bold text-[#1F8F73]">
+                  <p className="font-bold text-[#8B5CE7]">
                     {(booking.service_types as { name?: string } | null)
                       ?.name ?? "บริการ"}
                   </p>
                   <h2 className="mt-1 font-extrabold">
                     {booking.origin_address} → {booking.destination_address}
                   </h2>
-                  <p className="mt-1 text-base text-[#2E2E2E]/70">
+                  <p className="mt-1 text-base text-[#29213D]/70">
                     {booking.scheduled_date} {booking.scheduled_start_time}
                   </p>
                 </div>

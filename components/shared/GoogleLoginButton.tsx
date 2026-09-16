@@ -30,7 +30,7 @@ export function GoogleLoginButton({ initialError }: GoogleLoginButtonProps) {
   return (
     <>
       <Button className="w-full" onClick={signInWithGoogle} disabled={loading}>
-        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#FAFAF8] text-base font-extrabold text-[#1F8F73]">G</span>
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#FAF7FF] text-base font-extrabold text-[#8B5CE7]">G</span>
         {loading ? "กำลังเชื่อมต่อ..." : "เข้าสู่ระบบด้วย Google"}
         <ArrowRight size={22} strokeWidth={2} aria-hidden="true" />
       </Button>

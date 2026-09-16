@@ -17,7 +17,7 @@ export default async function AdminCompanionsPage() {
     <main className="mx-auto max-w-6xl px-5 py-8">
         <BackToDashboard compact role="admin" />
       <h1 className="text-3xl font-extrabold">จัดการผู้ช่วยเดินทาง</h1>
-      <p className="mt-2 text-[#2E2E2E]/75">
+      <p className="mt-2 text-[#29213D]/75">
         ตรวจสอบและจัดการสถานะผู้ช่วยในระบบ
       </p>
       <div className="mt-8 grid gap-5">
@@ -38,11 +38,11 @@ export default async function AdminCompanionsPage() {
                     <h2 className="text-xl font-extrabold">
                       {profile?.full_name ?? "ไม่ระบุชื่อ"}
                     </h2>
-                    <p className="mt-2 text-[#2E2E2E]/75">
+                    <p className="mt-2 text-[#29213D]/75">
                       ประสบการณ์ {companion.experience_years} ปี ·{" "}
                       {companion.hourly_rate} บาท/ชั่วโมง
                     </p>
-                    <p className="mt-2 text-base text-[#2E2E2E]/70">
+                    <p className="mt-2 text-base text-[#29213D]/70">
                       สถานะบัญชี: {profile?.status ?? "ไม่ระบุ"} · ตรวจบัตร:{" "}
                       {companion.id_card_verified ? "อนุมัติแล้ว" : "รอตรวจสอบ"}
                     </p>

@@ -1,28 +1,33 @@
 @import "tailwindcss";
 
+@theme inline {
+  --font-sans: var(--font-prompt), sans-serif;
+  --font-heading: var(--font-baloo), var(--font-prompt), sans-serif;
+}
+
 :root {
-	--primary: #1f8f73;
-	--primary-600: #187a62;
-	--accent: #f5a65b;
-	--neutral-50: #fafaf8;
-	--neutral-800: #2e2e2e;
-	--danger: #d64545;
-	--success: #2fa88a;
+  --primary: #8B5CE7;
+  --primary-600: #7C3AED;
+  --accent: #A78BFA;
+  --neutral-50: #FAF7FF;
+  --neutral-800: #29213D;
+  --danger: #d64545;
+  --success: #93C5FD;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	background: var(--neutral-50);
-	color: var(--neutral-800);
-	font-size: 18px;
+  background: var(--neutral-50);
+  color: var(--neutral-800);
+  font-size: 18px;
 }
 
 button,
 a,
 input,
 select {
-	-webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }

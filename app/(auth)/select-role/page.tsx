@@ -60,19 +60,19 @@ export default function SelectRolePage() {
     <main className="flex min-h-screen items-center justify-center px-5 py-10">
       <div className="w-full max-w-3xl">
         <div className="mb-8 text-center">
-          <HeartHandshake className="mx-auto mb-4 text-[#1F8F73]" size={44} strokeWidth={2} aria-hidden="true" />
-          <h1 className="text-3xl font-extrabold text-[#2E2E2E]">คุณต้องการใช้ Care Companion แบบไหน?</h1>
-          <p className="mt-3 text-[#2E2E2E]/75">เลือกบทบาทของคุณเพื่อเริ่มต้นใช้งาน</p>
+          <HeartHandshake className="mx-auto mb-4 text-[#8B5CE7]" size={44} strokeWidth={2} aria-hidden="true" />
+          <h1 className="text-3xl font-extrabold text-[#29213D]">คุณต้องการใช้ Care Companion แบบไหน?</h1>
+          <p className="mt-3 text-[#29213D]/75">เลือกบทบาทของคุณเพื่อเริ่มต้นใช้งาน</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {roles.map(({ value, label, description, icon: Icon }) => {
             const selected = selectedRole === value;
             return (
               <button key={value} type="button" onClick={() => setSelectedRole(value)} className="text-left">
-                <Card className={`h-full border-2 transition-colors ${selected ? "border-[#1F8F73] bg-[#1F8F73]/10" : "border-[#2E2E2E]/10"}`}>
-                  <Icon className="mb-5 text-[#1F8F73]" size={40} strokeWidth={2} aria-hidden="true" />
-                  <h2 className="text-xl font-extrabold text-[#2E2E2E]">{label}</h2>
-                  <p className="mt-3 leading-relaxed text-[#2E2E2E]/75">{description}</p>
+                <Card className={`h-full border-2 transition-colors ${selected ? "border-[#8B5CE7] bg-[#8B5CE7]/10" : "border-[#29213D]/10"}`}>
+                  <Icon className="mb-5 text-[#8B5CE7]" size={40} strokeWidth={2} aria-hidden="true" />
+                  <h2 className="text-xl font-extrabold text-[#29213D]">{label}</h2>
+                  <p className="mt-3 leading-relaxed text-[#29213D]/75">{description}</p>
                 </Card>
               </button>
             );

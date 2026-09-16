@@ -15,7 +15,7 @@ export default async function AdminDashboardPage() {
   const metrics = [{ label: "ลูกค้าทั้งหมด", value: customers ?? 0, icon: UserRound }, { label: "ผู้ช่วยทั้งหมด", value: companions ?? 0, icon: UsersRound }, { label: "การจองวันนี้", value: todayBookings ?? 0, icon: CalendarDays }, { label: "รายการที่ยังไม่จบ", value: unfinished ?? 0, icon: Clock3 }];
   return (
     <DashboardShell role="admin" title="แดชบอร์ดผู้ดูแลระบบ" description="ภาพรวมการใช้งานและการจัดการแพลตฟอร์ม Care Companion">
-      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{metrics.map(({ label, value, icon: Icon }) => <Card key={label}><Icon className="text-[#1F8F73]" size={32} strokeWidth={2} aria-hidden="true" /><p className="mt-5 text-4xl font-extrabold">{value}</p><p className="mt-2 text-[#2E2E2E]/75">{label}</p></Card>)}</div>
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{metrics.map(({ label, value, icon: Icon }) => <Card key={label}><Icon className="text-[#8B5CE7]" size={32} strokeWidth={2} aria-hidden="true" /><p className="mt-5 text-4xl font-extrabold">{value}</p><p className="mt-2 text-[#29213D]/75">{label}</p></Card>)}</div>
     </DashboardShell>
   );
 }

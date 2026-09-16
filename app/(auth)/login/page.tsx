@@ -19,19 +19,19 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
 
   return (
     <main className="flex min-h-screen items-center justify-center px-5 py-8">
-      <div className="grid w-full max-w-5xl overflow-hidden rounded-[1.25rem] bg-[#1F8F73] shadow-[0_12px_36px_rgba(46,46,46,0.15)] lg:grid-cols-2">
+      <div className="grid w-full max-w-5xl overflow-hidden rounded-[1.25rem] bg-[#f0ebfa] shadow-[0_12px_36px_rgba(41,33,61,0.15)] lg:grid-cols-2">
         <div className="relative min-h-64 lg:min-h-155">
           <Image src="/images/illustrations/login.svg.svg" alt="ผู้ช่วยดูแลผู้สูงอายุระหว่างเดินทาง" fill className="object-cover" priority />
         </div>
-        <div className="flex flex-col justify-center bg-[#FAFAF8] p-7 sm:p-12">
-          <Link href="/" className="mb-10 flex items-center gap-3 text-xl font-extrabold text-[#1F8F73]">
+        <div className="flex flex-col justify-center bg-[#FAF7FF] p-7 sm:p-12">
+          <Link href="/" className="mb-10 flex items-center gap-3 text-xl font-extrabold text-[#8B5CE7]">
             <HeartHandshake size={30} strokeWidth={2} aria-hidden="true" /> Care Companion
           </Link>
-          <p className="mb-3 font-bold text-[#187A62]">เดินทางอย่างอุ่นใจ</p>
-          <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#2E2E2E] sm:text-4xl">เข้าสู่ระบบ</h1>
-          <p className="mb-8 leading-relaxed text-[#2E2E2E]/80">เชื่อมต่อกับผู้ช่วยเดินทางที่พร้อมดูแลคุณหรือคนที่คุณรัก</p>
+          <p className="mb-3 font-bold text-[#7C3AED]">เดินทางอย่างอุ่นใจ</p>
+          <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#29213D] sm:text-4xl">เข้าสู่ระบบ</h1>
+          <p className="mb-8 leading-relaxed text-[#29213D]/80">เชื่อมต่อกับผู้ช่วยเดินทางที่พร้อมดูแลคุณหรือคนที่คุณรัก</p>
           <GoogleLoginButton initialError={getCallbackError(error, message)} />
-          <p className="mt-8 text-center text-base text-[#2E2E2E]/70">การเข้าสู่ระบบแสดงว่าคุณยอมรับเงื่อนไขการใช้งานของเรา</p>
+          <p className="mt-8 text-center text-base text-[#29213D]/70">การเข้าสู่ระบบแสดงว่าคุณยอมรับเงื่อนไขการใช้งานของเรา</p>
         </div>
       </div>
     </main>

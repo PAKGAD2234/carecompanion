@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { HeartHandshake, LogIn, LogOut } from "lucide-react";
+import { LogIn, LogOut } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { createClient } from "@/lib/supabase/client";
 
@@ -19,19 +20,21 @@ export function Navbar() {
   }
 
   return (
-    <header className="border-b border-[#2E2E2E]/10 bg-[#FAFAF8]">
+    <header className="border-b border-[#8B5CE7]/15 bg-[#FAF7FF]">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4"
         aria-label="เมนูหลัก"
       >
         <Link
           href="/"
-          className="flex items-center gap-3 text-xl font-extrabold text-[#1F8F73]"
+          className="flex items-center gap-3 text-xl font-extrabold text-[#8B5CE7]"
         >
-          <HeartHandshake
-            size={30}
-            strokeWidth={2}
-            aria-hidden="true"
+          <Image
+            src="/images/illustrations/logo.png"
+            alt="Care Companion"
+            width={150}
+            height={150}
+            className="h-[100px] w-[100px] object-contain"
           />
           Care Companion
         </Link>
@@ -40,7 +43,7 @@ export function Navbar() {
           {user ? (
             <>
               <Link
-                className="hidden rounded-xl px-4 py-3 font-bold text-[#1F8F73] hover:bg-[#1F8F73]/10 sm:block"
+                className="hidden rounded-xl px-4 py-3 font-bold text-[#8B5CE7] hover:bg-[#8B5CE7]/10 sm:block"
                 href={dashboard}
               >
                 หน้าหลัก
@@ -60,7 +63,7 @@ export function Navbar() {
             </>
           ) : (
             <Link
-              className="flex min-h-12 items-center gap-2 rounded-xl px-4 py-3 font-bold text-[#1F8F73] hover:bg-[#1F8F73]/10"
+              className="flex min-h-12 items-center gap-2 rounded-xl px-4 py-3 font-bold text-[#8B5CE7] hover:bg-[#8B5CE7]/10"
               href="/login"
             >
               <LogIn

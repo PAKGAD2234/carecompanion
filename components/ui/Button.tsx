@@ -7,10 +7,10 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: "bg-[#1F8F73] text-[#FAFAF8] hover:bg-[#187A62]",
-  secondary: "bg-[#F5A65B] text-[#2E2E2E] hover:brightness-95",
-  outline: "border-2 border-[#1F8F73] bg-transparent text-[#1F8F73] hover:bg-[#1F8F73]/10",
-  danger: "bg-[#D64545] text-[#FAFAF8] hover:brightness-90",
+  primary: "bg-[#8B5CE7] text-[#FAF7FF] hover:bg-[#7C3AED]",
+  secondary: "bg-[#A78BFA] text-[#29213D] hover:brightness-95",
+  outline: "border-2 border-[#8B5CE7] bg-transparent text-[#8B5CE7] hover:bg-[#8B5CE7]/10",
+  danger: "bg-[#D64545] text-[#FAF7FF] hover:brightness-90",
 };
 
 export function Button({ className = "", variant = "primary", ...props }: ButtonProps) {

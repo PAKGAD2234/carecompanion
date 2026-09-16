@@ -41,7 +41,7 @@ export default async function AdminServiceTypesPage() {
               type="checkbox"
               name="is_active"
               defaultChecked
-              className="h-5 w-5 accent-[#1F8F73]"
+              className="h-5 w-5 accent-[#8B5CE7]"
             />{" "}
             เปิดใช้งาน
           </label>
@@ -63,7 +63,7 @@ export default async function AdminServiceTypesPage() {
                 <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
                   <div>
                     <h3 className="text-xl font-extrabold">{service.name}</h3>
-                    <p className="mt-1 text-base text-[#2E2E2E]/70">
+                    <p className="mt-1 text-base text-[#29213D]/70">
                       ไอคอน: {service.icon_name ?? "ค่าเริ่มต้น"} ·{" "}
                       {service.is_active ? "เปิดใช้งาน" : "ปิดใช้งาน"}
                     </p>
@@ -85,12 +85,12 @@ export default async function AdminServiceTypesPage() {
                       </Button>
                     </form>
                     <details>
-                      <summary className="flex min-h-14 cursor-pointer list-none items-center justify-center gap-2 rounded-[1.25rem] border-2 border-[#1F8F73] px-5 py-3 font-bold text-[#1F8F73]">
+                      <summary className="flex min-h-14 cursor-pointer list-none items-center justify-center gap-2 rounded-[1.25rem] border-2 border-[#8B5CE7] px-5 py-3 font-bold text-[#8B5CE7]">
                         <Pencil size={21} strokeWidth={2} /> แก้ไข
                       </summary>
                       <form
                         action={saveServiceType}
-                        className="mt-3 space-y-3 rounded-xl border border-[#2E2E2E]/10 p-3"
+                        className="mt-3 space-y-3 rounded-xl border border-[#29213D]/10 p-3"
                       >
                         <input type="hidden" name="id" value={service.id} />
                         <Input
@@ -111,7 +111,7 @@ export default async function AdminServiceTypesPage() {
                             type="checkbox"
                             name="is_active"
                             defaultChecked={service.is_active}
-                            className="h-5 w-5 accent-[#1F8F73]"
+                            className="h-5 w-5 accent-[#8B5CE7]"
                           />{" "}
                           เปิดใช้งาน
                         </label>

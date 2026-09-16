@@ -41,7 +41,7 @@ export default async function CompanionJobsPage({
         <BackToDashboard compact role="companion" />
       <div className="mb-8">
         <h1 className="text-3xl font-extrabold">งานที่เปิดรับ</h1>
-        <p className="mt-2 text-[#2E2E2E]/75">
+        <p className="mt-2 text-[#29213D]/75">
           เลือกคำขอที่ตรงกับเวลาและพื้นที่ให้บริการของคุณ
         </p>
       </div>
@@ -55,17 +55,17 @@ export default async function CompanionJobsPage({
       ) : null}
       {success === "1" ? (
         <p
-          className="mb-6 rounded-xl bg-[#2FA88A]/15 p-4 font-semibold text-[#187A62]"
+          className="mb-6 rounded-xl bg-[#93C5FD]/15 p-4 font-semibold text-[#7C3AED]"
           role="status"
         >
           รับงานสำเร็จแล้ว
         </p>
       ) : null}
-      {completed === "1" ? <p className="mb-6 rounded-xl bg-[#2FA88A]/15 p-4 font-semibold text-[#187A62]" role="status">บันทึกการจบงานสำเร็จแล้ว</p> : null}
+      {completed === "1" ? <p className="mb-6 rounded-xl bg-[#93C5FD]/15 p-4 font-semibold text-[#7C3AED]" role="status">บันทึกการจบงานสำเร็จแล้ว</p> : null}
       {!bookings?.length ? (
         <Card className="py-12 text-center">
           <BriefcaseBusiness
-            className="mx-auto text-[#1F8F73]"
+            className="mx-auto text-[#8B5CE7]"
             size={48}
             strokeWidth={2}
             aria-hidden="true"
@@ -73,7 +73,7 @@ export default async function CompanionJobsPage({
           <h2 className="mt-4 text-2xl font-extrabold">
             ยังไม่มีงานที่เปิดรับ
           </h2>
-          <p className="mt-2 text-[#2E2E2E]/75">งานใหม่จะแสดงที่หน้านี้</p>
+          <p className="mt-2 text-[#29213D]/75">งานใหม่จะแสดงที่หน้านี้</p>
         </Card>
       ) : (
         <div className="grid gap-5">
@@ -81,19 +81,19 @@ export default async function CompanionJobsPage({
             <Card key={booking.id}>
               <div className="flex flex-col justify-between gap-5 lg:flex-row">
                 <div>
-                  <p className="font-bold text-[#1F8F73]">
+                  <p className="font-bold text-[#8B5CE7]">
                     {(booking.service_types as { name?: string } | null)
                       ?.name ?? "บริการเดินทาง"}
                   </p>
                   <h2 className="mt-2 text-xl font-extrabold">
                     {booking.origin_address} → {booking.destination_address}
                   </h2>
-                  <p className="mt-2 text-[#2E2E2E]/75">
+                  <p className="mt-2 text-[#29213D]/75">
                     {booking.scheduled_date} เวลา {booking.scheduled_start_time}{" "}
                     · {booking.estimated_duration_hours} ชั่วโมง
                   </p>
                   {booking.notes ? (
-                    <p className="mt-2 text-base text-[#2E2E2E]/70">
+                    <p className="mt-2 text-base text-[#29213D]/70">
                       หมายเหตุ: {booking.notes}
                     </p>
                   ) : null}

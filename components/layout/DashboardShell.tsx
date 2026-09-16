@@ -18,8 +18,8 @@ export function DashboardShell({ role, title, description, children }: Dashboard
         <Sidebar role={role} />
         <main className="flex-1 px-5 py-8 sm:px-8">
           <div className="mx-auto max-w-5xl">
-            <h1 className="text-3xl font-extrabold text-[#2E2E2E]">{title}</h1>
-            <p className="mt-3 text-lg text-[#2E2E2E]/75">{description}</p>
+            <h1 className="text-3xl font-extrabold text-[#29213D]">{title}</h1>
+            <p className="mt-3 text-lg text-[#29213D]/75">{description}</p>
             {children}
           </div>
         </main>

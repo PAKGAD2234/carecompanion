@@ -23,13 +23,13 @@ export function BackToDashboard({
         fixed left-5 top-24 z-50
         flex items-center gap-2
         rounded-xl
-        border border-[#1F8F73]/20
-        bg-[#FAFAF8]
+        border border-[#8B5CE7]/20
+        bg-[#FAF7FF]
         px-4 py-3
-        font-bold text-[#1F8F73]
+        font-bold text-[#8B5CE7]
         shadow-sm
         transition-all
-        hover:bg-[#1F8F73]
+        hover:bg-[#8B5CE7]
         hover:text-white
         hover:shadow-md
         ${compact ? "text-base" : "text-lg"}
