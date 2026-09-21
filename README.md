@@ -1,6 +1,9 @@
 <div align="center">
 
-# 🤝 Care Companion
+<h1 align="center">
+  <img src="https://github.com/user-attachments/assets/630d9dde-8b0a-427b-b3a7-5818138acf99" width="70" align="absmiddle" />
+  Care Companion
+</h1>
 
 ### แพลตฟอร์มเชื่อมโยง **ผู้ที่ต้องการผู้ช่วยร่วมเดินทาง** กับ **ผู้ให้บริการร่วมเดินทาง**
 *ไปหาหมอ ไปธนาคาร ติดต่อราชการ ซื้อของ หรือทำธุระนอกบ้าน  ไม่ต้องไปคนเดียว*
