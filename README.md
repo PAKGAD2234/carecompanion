@@ -16,30 +16,13 @@
 
 <br/>
 
-### 🌐 [**เข้าใช้งานเว็บไซต์ (Live Demo)**](https://YOUR-APP.vercel.app)
+### 🌐 [**เข้าใช้งานเว็บไซต์ (Live Demo)**](carecompanion-ecru.vercel.app)
 
 <br/>
 
 <img width="100%" alt="Care Companion Landing Page" src="https://github.com/user-attachments/assets/68c2c4d4-1549-4da3-882b-de1a1966fd3b" />
 
 </div>
-
----
-
-## 📑 สารบัญ
-
-- [✨ เกี่ยวกับโปรเจกต์](#-เกี่ยวกับโปรเจกต์)
-- [👥 บทบาทผู้ใช้งาน (Roles)](#-บทบาทผู้ใช้งาน-roles)
-- [🚀 ฟีเจอร์หลัก](#-ฟีเจอร์หลัก)
-- [🔄 ขั้นตอนการใช้บริการ (User Flow)](#-ขั้นตอนการใช้บริการ-user-flow)
-- [📸 Screenshots](#-screenshots)
-- [🛠 Tech Stack](#-tech-stack)
-- [🔐 Security & Business Rules](#-security--business-rules)
-- [⚙️ การติดตั้งและรันโปรเจกต์](#️-การติดตั้งและรันโปรเจกต์)
-- [☁️ Deployment](#️-deployment)
-- [📁 โครงสร้างโปรเจกต์](#-โครงสร้างโปรเจกต์)
-- [👨‍💻 ผู้พัฒนา](#-ผู้พัฒนา)
-
 ---
 
 ## ✨ เกี่ยวกับโปรเจกต์
@@ -344,7 +327,7 @@ flowchart LR
 **ชื่อ-นามสกุล:** นางสาว รัตนากร สุระ
 **รหัสนักศึกษา:** 6752410029
 
-[![GitHub](https://img.shields.io/badge/GitHub-YOUR--USERNAME-181717?style=for-the-badge&logo=github)](https://github.com/YOUR-USERNAME)
+[![GitHub](https://img.shields.io/badge/GitHub-YOUR--USERNAME-181717?style=for-the-badge&logo=github)](https://github.com/PAKGAD2234)
 
 <br/>
 
