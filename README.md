@@ -337,129 +337,18 @@ flowchart LR
 
 ---
 
-## ⚙️ การติดตั้งและรันโปรเจกต์
-
-### ✅ สิ่งที่ต้องมี
-
-- [Node.js](https://nodejs.org/) 18.18 ขึ้นไป
-- บัญชี [Supabase](https://supabase.com/)
-- Google Cloud Project สำหรับ OAuth Client
-
-### 1️⃣ Clone โปรเจกต์
-
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-cd YOUR-REPO
-```
-
-### 2️⃣ ติดตั้ง Dependencies
-
-```bash
-npm install
-```
-
-### 3️⃣ ตั้งค่า Environment Variables
-
-สร้างไฟล์ `.env.local` ที่ root ของโปรเจกต์
-
-```env
-NEXT_PUBLIC_SUPABASE_URL=https://your-project-id.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-```
-
-### 4️⃣ ตั้งค่า Supabase
-
-1. สร้างโปรเจกต์ใหม่ที่ [Supabase Dashboard](https://supabase.com/dashboard)
-2. สร้างตารางและ Policy ในฐานข้อมูล (SQL Editor)
-3. สร้าง Storage Bucket สำหรับเก็บรูปภาพ/ไฟล์
-4. ไปที่ **Authentication → Providers → Google** แล้วเปิดใช้งาน โดยใส่ `Client ID` และ `Client Secret` จาก Google Cloud Console
-5. เพิ่ม Redirect URL ใน Google Cloud Console:
-   ```
-   https://your-project-id.supabase.co/auth/v1/callback
-   ```
-6. เพิ่ม Site URL / Redirect URLs ใน **Authentication → URL Configuration**
-   ```
-   http://localhost:3000
-   https://YOUR-APP.vercel.app
-   ```
-
-### 5️⃣ รันโปรเจกต์
-
-```bash
-npm run dev
-```
-
-เปิด [http://localhost:3000](http://localhost:3000) ในเบราว์เซอร์ 🎉
-
-### 📜 Scripts
-
-| คำสั่ง | ความหมาย |
-|:---|:---|
-| `npm run dev` | รัน Development Server |
-| `npm run build` | Build สำหรับ Production |
-| `npm run start` | รัน Production Server |
-| `npm run lint` | ตรวจสอบโค้ดด้วย ESLint |
-
----
-
-## ☁️ Deployment
-
-โปรเจกต์นี้ Deploy อยู่บน **Vercel**
-
-1. Push โค้ดขึ้น GitHub
-2. เข้า [Vercel](https://vercel.com/) → **Add New Project** → เลือก Repository นี้
-3. เพิ่ม Environment Variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`)
-4. กด **Deploy**
-5. นำโดเมนที่ได้ไปเพิ่มใน Supabase **Redirect URLs** เพื่อให้ Google Login ใช้งานได้
-
-🔗 **Production:** https://YOUR-APP.vercel.app
-
----
-
-## 📁 โครงสร้างโปรเจกต์
-
-> 📝 *ตัวอย่างโครงสร้าง ปรับให้ตรงกับโปรเจกต์จริงของคุณ*
-
-```
-care-companion/
-├── app/
-│   ├── (public)/            # Landing Page, Login
-│   ├── customer/            # Dashboard, bookings, notifications, settings
-│   ├── companion/           # Dashboard, jobs, schedule, reviews, notifications, settings
-│   ├── admin/               # Dashboard, companions, customers, service-types, bookings, notifications, settings
-│   └── auth/callback/       # Google OAuth callback
-├── components/              # Reusable UI Components
-├── lib/
-│   └── supabase/            # Supabase client (browser / server)
-├── middleware.ts            # Route protection ตาม Role
-├── public/                  # Static assets
-└── .env.local               # Environment variables (ไม่ commit)
-```
-
----
-
-## 📚 ข้อมูลรายวิชา
-
-| | |
-|:---|:---|
-| **งาน** | Assignment + Midterm — พัฒนา Web Application by Next.js |
-| **บทบาทที่ต้องทำ** | System Analyst · UX/UI Designer · Full Stack Developer |
-| **คะแนน** | 25 คะแนน (ส่งงาน 15 + นำเสนอ 10) |
-
----
-
 ## 👨‍💻 ผู้พัฒนา
 
 <div align="center">
 
-**ชื่อ-นามสกุล:** YOUR NAME
-**รหัสนักศึกษา:** YOUR STUDENT ID
+**ชื่อ-นามสกุล:** นางสาว รัตนากร สุระ
+**รหัสนักศึกษา:** 6752410029
 
 [![GitHub](https://img.shields.io/badge/GitHub-YOUR--USERNAME-181717?style=for-the-badge&logo=github)](https://github.com/YOUR-USERNAME)
 
 <br/>
 
-⭐ *ถ้าชอบโปรเจกต์นี้ อย่าลืมกดดาวให้ด้วยนะครับ/คะ* ⭐
+⭐ *ขอบคุณค่ะ* ⭐
 
 **Made with ❤️ for those who need a companion**
 
