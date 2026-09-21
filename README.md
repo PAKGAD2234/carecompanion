@@ -311,12 +311,12 @@ flowchart LR
 
 ## 🔐 Security & Business Rules
 
-- 🔑 **Authentication** — ต้อง Login ด้วย Google Account ทั้ง Customer และ Companion
-- 🛂 **Role-Based Access Control** — แยกสิทธิ์การเข้าถึงหน้าและข้อมูลตาม Role (`customer` / `companion` / `admin`)
-- 🗄️ **Row Level Security (RLS)** — ป้องกันข้อมูลในระดับฐานข้อมูลของ Supabase ผู้ใช้เห็นและแก้ไขได้เฉพาะข้อมูลที่ตนมีสิทธิ์
-- 🛡️ **Admin** — จัดการข้อมูลของ Customer และ Companion ได้ทั้งหมด
-- 🩺 **ขอบเขตบริการ** — Companion ให้บริการช่วยเหลือการเดินทางและทำธุระเท่านั้น ไม่ใช่บริการทางการแพทย์
-- 🔒 **Environment Variables** — เก็บ Key ลับไว้ใน `.env.local` และไม่ commit ขึ้น Git
+- 🔑 **Authentication**  ต้อง Login ด้วย Google Account ทั้ง Customer และ Companion
+- 🛂 **Role-Based Access Control**  แยกสิทธิ์การเข้าถึงหน้าและข้อมูลตาม Role (`customer` / `companion` / `admin`)
+- 🗄️ **Row Level Security (RLS)**  ป้องกันข้อมูลในระดับฐานข้อมูลของ Supabase ผู้ใช้เห็นและแก้ไขได้เฉพาะข้อมูลที่ตนมีสิทธิ์
+- 🛡️ **Admin**  จัดการข้อมูลของ Customer และ Companion ได้ทั้งหมด
+- 🩺 **ขอบเขตบริการ**  Companion ให้บริการช่วยเหลือการเดินทางและทำธุระเท่านั้น ไม่ใช่บริการทางการแพทย์
+- 🔒 **Environment Variables**  เก็บ Key ลับไว้ใน `.env.local` และไม่ commit ขึ้น Git
 
 ---
 
