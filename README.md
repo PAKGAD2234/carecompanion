@@ -327,7 +327,7 @@ flowchart LR
 **ชื่อ-นามสกุล:** นางสาว รัตนากร สุระ
 **รหัสนักศึกษา:** 6752410029
 
-[![GitHub](https://img.shields.io/badge/GitHub-YOUR--USERNAME-181717?style=for-the-badge&logo=github)](https://github.com/PAKGAD2234)
+[![GitHub](https://img.shields.io/badge/GitHub-PAKGAD2234-181717?style=for-the-badge&logo=github)](https://github.com/PAKGAD2234)
 
 <br/>
 
