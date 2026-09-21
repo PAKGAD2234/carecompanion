@@ -24,8 +24,13 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           <Image src="/images/illustrations/login.svg.svg" alt="ผู้ช่วยดูแลผู้สูงอายุระหว่างเดินทาง" fill className="object-cover" priority />
         </div>
         <div className="flex flex-col justify-center bg-[#FAF7FF] p-7 sm:p-12">
-          <Link href="/" className="mb-10 flex items-center gap-3 text-xl font-extrabold text-[#8B5CE7]">
-            <HeartHandshake size={30} strokeWidth={2} aria-hidden="true" /> Care Companion
+          <Link href="/" className="mb-10 flex items-center gap-3 text-2xl font-extrabold text-[#8B5CE7] ">
+            <Image
+                        src="/images/illustrations/logo.png"
+                        alt="Care Companion"
+                        width={150}
+                        height={150}
+                        className="h-[100px] w-[100px] object-contain" /> Care Companion
           </Link>
           <p className="mb-3 font-bold text-[#7C3AED]">เดินทางอย่างอุ่นใจ</p>
           <h1 className="mb-4 text-3xl font-extrabold leading-tight text-[#29213D] sm:text-4xl">เข้าสู่ระบบ</h1>
